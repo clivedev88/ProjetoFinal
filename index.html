@@ -1,102 +1,102 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Empresa de Advocacia</title>
     <link rel="stylesheet" href="styles.css">
-    </head>
+</head>
 <body>
-    <header class="header">
+    <header class="cabecalho">
         <nav>
             <ul class="menu">
-               <li class="item"><a href="#">Serviços</a></li>
-               <li class="item"><a href="#">Advogados</a></li>
-               <li class="item"><a href="#">Áreas de atuação</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Advogados</a></li>
+                <li><a href="#">Áreas de atuação</a></li>
             </ul>
         </nav>
-        <img class="logo" src="" alt="">
+        <img class="logo" src="" alt="Logo">
         <button class="botao-menu">Saiba Mais</button> 
     </header>
+    
     <section class="inicio">
-        <aside>
-            <h2 class="texto">Advocacia especializada em soluções jurídicas eficientes</h2>
-            <h6 class="texto"''>Nosso escritório de advocacia oferece expertise e resultados comprovados para nossos clientes.</h6>
-            <div>
-                <button class="btn-saiba-mais">Saiba mais</button>
-                <button class="btn-contato">Entre en contato</button>
-            </div>
-        </aside>          
-        <img class="cover" src="https://img.freepik.com/fotos-gratis/natureza-morta-com-a-balanca-da-justica_23-2149776024.jpg" alt=""> 
+        <div class="conteudo">
+            <aside>
+                <h2>Advocacia especializada em soluções jurídicas eficientes</h2>
+                <h6>Nosso escritório de advocacia oferece expertise e resultados comprovados para nossos clientes.</h6>
+                <div>
+                    <button class="botao-saiba-mais">Saiba mais</button>
+                    <button class="botao-contato">Entre em contato</button>
+                </div>
+            </aside>          
+            <img class="imagem-capa" src="https://img.freepik.com/fotos-gratis/natureza-morta-com-a-balanca-da-justica_23-2149776024.jpg" alt="Imagem de Justiça"> 
+        </div>
     </section>
 
-    <section>
-        <h2>Serviços Jurídicos de Excelencia para você</h2>
+    <section id="servicos" class="secao">
+        <h2>Serviços Jurídicos de Excelência para Você</h2>
         <p>Oferecemos uma ampla gama de serviços jurídicos para atender às suas necessidades. Nossos advogados altamente qualificados estão prontos para ajudá-lo em diversas áreas do direito.</p>
-        <div class="grids">
-        <figure>
-            <img src="https://www.hostinger.com.br/tutoriais/wp-content/uploads/sites/12/2021/11/o-que-e-html.webp" alt="" width="300px">
-            <h4>IMG1</h4>
-            <p>Atuamos em diversas áreas do direito, incluindo civil, <br>criminal, trabalhista e empresarial.</p>
-        </figure>
-        <figure>
-            <img src="https://www.hostinger.com.br/tutoriais/wp-content/uploads/sites/12/2021/11/o-que-e-html.webp" alt="" width="300px">
-            <h4>IMG2</h4>
-            <p>Nossa equipe está pronta para fornecer a você a <br>melhor assessoria jurídica, <br>com soluções personalizadas para o seu caso.</p>
-        </figure>
-        <figure>
-            <img src="https://www.hostinger.com.br/tutoriais/wp-content/uploads/sites/12/2021/11/o-que-e-html.webp" alt="" width="300px">
-            <h4>IMG3</h4>
-            <p>Ao longo dos anos, conquistamos resultados <br>positivos para nossos clientes, <br>garantindo seus direitos e interesses.</p>
-        </figure>
-    </div>
-    <div>
-    <button>Saiba Mais</button>
-    <a href="#">Entre em contato</a>
-    </div>
+        <div class="grade">
+            <figure>
+                <img src="https://www.hostinger.com.br/tutoriais/wp-content/uploads/sites/12/2021/11/o-que-e-html.webp" alt="" width="300px">
+                <h4>IMG1</h4>
+                <p>Atuamos em diversas áreas do direito, incluindo civil, <br>criminal, trabalhista e empresarial.</p>
+            </figure>
+            <figure>
+                <img src="https://www.hostinger.com.br/tutoriais/wp-content/uploads/sites/12/2021/11/o-que-e-html.webp" alt="" width="300px">
+                <h4>IMG2</h4>
+                <p>Nossa equipe está pronta para fornecer a você a <br>melhor assessoria jurídica, <br>com soluções personalizadas para o seu caso.</p>
+            </figure>
+            <figure>
+                <img src="https://www.hostinger.com.br/tutoriais/wp-content/uploads/sites/12/2021/11/o-que-e-html.webp" alt="" width="300px">
+                <h4>IMG3</h4>
+                <p>Ao longo dos anos, conquistamos resultados <br>positivos para nossos clientes, <br>garantindo seus direitos e interesses.</p>
+            </figure>
+        </div>
+        <div>
+            <button>Saiba Mais</button>
+            <a href="#">Entre em contato</a>
+        </div>
     </section>
-    <section class="home">
-        <h2>Experiência e Resultados Comprovados</h2>
 
+    <section id="experiencia" class="secao">
+        <div class="container">
+            <h2>Experiência e Resultados Comprovados</h2>
+            <p>Com mais de 20 anos de experiência, garantimos resultados eficientes e soluções personalizadas para cada cliente.</p>
+        </div>
     </section>
+
+    <section id="contato" class="secao">
+        <div class="container">
+            <h2>Contato</h2>
+            <form>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome">
+                <label for="nome">Sobrenome:</label>
+                <input type="text" id="sobrenome" name="sobrenome">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="tel" name="tel">
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem"></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="redes-sociais">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">X</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">YouTube</a>
+            </div>
+            <p>Localização: Fortaleza, Brasil</p>
+        </div>
+    </footer>
 
 </body>
 </html>
-
-
-
-
-
-
-<!-- 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>site de Advocacia</title>
-</head>
-<body>
-    <section class="advocacia">
-        <div class="texto">
-            <p>Advocacia</p>
-            <h1>Serviços Jurídicos de Excelência para Você</h1>
-            <p>Oferecemos uma ampla gama de serviços para atender às suas necessidades. Nossos advogados altamente qualificados estão prontos para ajudá-lo em diversas áreas do direito.</p>
-        </div>
-
-        <div class="principal">
-            <div class="conteudo">
-                <img src="" alt="">
-                <p class="servico">Áreas de Atuação</p>
-                <p class="descricao">Atuamos em diversas áreas do direito, incluindo civil, criminal, trabalhista e empresarial.</p>
-            </div>
-
-            <div>
-                <button>Saiba Mais</button>
-                <p>Entre em Contato &gt</p>
-            </div>
-        </div>
-
-    </section>
-</body>
-</html> -->

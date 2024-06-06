@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    border: 1px solid grey;
+    height: 45px;
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: white;
+    color: black;
+    font-family: 'Roboto';
+    font-size: 14px;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+ul{
+    list-style-type: none;
+    overflow: hidden;
+}
+li {
+    display: inline-block;
+    margin: 0 15px;
+}
+li a {
+    text-decoration: none;
+    color: black;
+}
+li a:hover {
+    text-decoration: underline;
+}
+.menu {
+    flex-direction:  row;
+    overflow: hidden;
+    list-style-type: none;
+}
+
+.logo {
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.botao-menu {
+    background-color: black;
+    color: white;
+    border-radius: 3px;
+}
+
+/* BODY */
+
+.inicio {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    box-sizing: border-box;
+    border: 1px solid beige;
+    height: 100%;
+}
+
+aside {
+    font-size: 45px;
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: 80px 40px 50px 50px;
+    text-wrap: wrap;
+}
+
+C:\Users\LONDRES28\Projeto Final\index.html
+.texto {
+    margin: 10px 0;
+
+}
+aside button {
+    font-family: 'Roboto';
+    font-size: 12px;
+    padding: 10px 15px;
+    width: fit-content;
+}
+.btn-saiba-mais {
+    background-color: black;
+    color: white;
+    border: none;
+    box-shadow: 2px 2px 2px grey;
+
+}
+.btn-contato {
+    background-color: white;
+    border: 1px solid grey;
+    box-shadow: 2px 2px 2px grey;
+}
+.cover {
+    /* display: block; */
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}

@@ -1,18 +1,23 @@
 body, html {
-    margin: 0;
+    margin: 0px;
     padding: 0;
     width: 100%;
     height: 100%;
     font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
 }
 
 .cabecalho {
+    position: fixed;
+    top: 0;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    padding: 20px;
     background-color: #333;
     color: white;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .menu {
@@ -27,18 +32,60 @@ body, html {
 }
 
 .logo {
-    width: 100px;
+    width: 80px;
 }
 
 .botao-menu {
-    background-color: grey;
+    background-color: black;
     color: white;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
+    margin-top: 0;
 }
 
 .botao-menu:hover {
+    background-color: #0056b3;
+}
+
+.inicio {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+    min-height: calc(100vh - 50px);
+    max-width: 100%;
+}
+
+.conteudo {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+.conteudo aside {
+    width: 50%;
+    padding: 20px;
+}
+
+.imagem-capa {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.botao-saiba-mais, .botao-contato {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.botao-saiba-mais:hover, .botao-contato:hover {
     background-color: #0056b3;
 }
 
@@ -47,39 +94,9 @@ body, html {
     justify-content: center;
     align-items: center;
     width: 100%;
-    min-height: 100vh;
+    min-height: calc(100vh - 70px);
     text-align: center;
-    padding: 20px;
     flex-direction: column;
-}
-
-.inicio {
-    background-color: #f4f4f4;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.inicio .conteudo {
-    display: flex;
-    width: 100%;
-    height: 100vh;
-    align-items: center;
-}
-
-.inicio aside {
-    flex: 1;
-    padding: 20px;
-}
-
-.imagem-capa {
-    flex: 1;
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
-}
-
-#servicos {
-    background-color: #e8e8e8;
 }
 
 .grade {
@@ -120,7 +137,7 @@ footer {
 button {
     padding: 10px 20px;
     margin-top: 20px;
-    background-color: #007BFF;
+    background-color: black;
     color: white;
     border: none;
     cursor: pointer;
@@ -150,35 +167,12 @@ form input, form textarea {
 
 form button {
     padding: 10px 20px;
-    background-color: #28a745;
+    background-color: black;
     color: white;
     border: none;
     cursor: pointer;
 }
 
 form button:hover {
-    background-color: #218838;
-}
-
-/* Media Queries para Responsividade */
-@media (max-width: 768px) {
-    .cabecalho {
-        flex-direction: column;
-    }
-
-    .menu {
-        flex-direction: column;
-    }
-
-    .inicio {
-        flex-direction: column;
-    }
-
-    .inicio .conteudo {
-        flex-direction: column;
-    }
-
-    .grade {
-        flex-direction: column;
-    }
+    background-color: #0056b3;
 }
